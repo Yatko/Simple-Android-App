@@ -1,0 +1,27 @@
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+    <string name="app_name">Simple Android App</string>
+    <string name="nav_footer_text_template">Copyright &#169; 2018 %s.</string>
+    <string name="nav_footer_subtitle">H7 | app.h7.org/simple</string>
+    <string name="nav_header_title_template">%s</string>
+    <string name="nav_header_subtitle_template">Version %s</string>
+    <string name="menu_social_media_title">Social Media</string>
+    <string name="menu_social_media_description">Connect</string>
+    <string name="menu_contact_us_title">Contact Us</string>
+    <string name="menu_contact_us_description">Contact</string>
+    <string name="menu_support_title">Support</string>
+    <string name="menu_support_description">Get Help</string>
+    <string name="menu_website_title">Website</string>
+    <string name="menu_website_description">Visit Us</string>
+    <string name="menu_rate_us_title">Rate Us</string>
+    <string name="menu_rate_us_description">Like It?</string>
+    <string name="menu_settings_title">Settings</string>
+    <string name="menu_settings_description">Fine Tune</string>
+</resources>

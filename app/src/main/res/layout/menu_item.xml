@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="org.h7.simple.data.menu.MenuItem" />
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/nav_item_height"
+        android:onClick="@{click::onClick}"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_item_vertical_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/menu_item_vertical_margin">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/nav_item_icons_size"
+            android:layout_height="@dimen/nav_item_icons_size"
+            android:scaleType="fitCenter"
+            android:src="@{item.icon}"
+            android:tint="@color/nav_item_icon"
+            android:layout_marginRight="@dimen/base_margin_double"
+            android:layout_marginEnd="@dimen/base_margin_double"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TA.Menu.Item.Text"
+                android:text="@{item.title}"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TA.Menu.Item.Description"
+                android:text="@{item.subtitle}"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

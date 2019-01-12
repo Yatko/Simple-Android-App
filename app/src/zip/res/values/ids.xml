@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+    <item name="menu_social_media" type="id" />
+    <item name="menu_contact_us" type="id" />
+    <item name="menu_support" type="id" />
+    <item name="menu_website" type="id" />
+    <item name="menu_rate_us" type="id" />
+    <item name="menu_settings" type="id" />
+</resources>

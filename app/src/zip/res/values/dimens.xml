@@ -1,0 +1,17 @@
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org). All rights reserved.
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+    <!-- navigation menu -->
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_logo_size">56dp</dimen>
+    <dimen name="nav_item_height">48dp</dimen>
+    <dimen name="nav_item_icons_size">24dp</dimen>
+    <dimen name="nav_logo_stroke_width">2dp</dimen>
+
+</resources>

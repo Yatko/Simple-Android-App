@@ -1,0 +1,44 @@
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+    <style name="TA" parent="TextAppearance.AppCompat"/>
+
+    <style name="TA.Menu" />
+
+    <style name="TA.Menu.Header"/>
+    <style name="TA.Menu.Header.Title">
+        <item name="android:textSize">@dimen/text_title_small</item>
+        <item name="android:textColor">@color/nav_header_text_title</item>
+    </style>
+    <style name="TA.Menu.Header.Subtitle">
+        <item name="android:textSize">@dimen/text_description_small</item>
+        <item name="android:textColor">@color/nav_header_text_subtitle</item>
+    </style>
+
+    <style name="TA.Menu.Item"/>
+    <style name="TA.Menu.Item.Text">
+        <item name="android:textColor">@color/nav_item_text</item>
+        <item name="android:textSize">@dimen/text_link</item>
+    </style>
+    <style name="TA.Menu.Item.Description">
+        <item name="android:textColor">@color/nav_item_description</item>
+        <item name="android:textSize">@dimen/text_description_small</item>
+    </style>
+
+    <style name="TA.Menu.Copyright"/>
+    <style name="TA.Menu.Copyright.Text">
+        <item name="android:textSize">@dimen/text_description_small</item>
+        <item name="android:textColor">@color/nav_copyright</item>
+    </style>
+    <style name="TA.Menu.Copyright.Web">
+        <item name="android:textSize">@dimen/text_description_small</item>
+        <item name="android:textColor">@color/nav_web</item>
+    </style>
+
+</resources>

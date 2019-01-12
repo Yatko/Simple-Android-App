@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "org.h7.simple"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            ext.enableCrashlytics = false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    flavorDimensions "app"
+
+    productFlavors {
+        zip {
+            dimension "app"
+            applicationIdSuffix = ".zip"
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def appName = "simple"
+            def flavor = variant.productFlavors[0].name
+            def SEP = "_"
+            def buildType = variant.variantData.variantConfiguration.buildType.name
+            outputFileName = appName + SEP + flavor + SEP + buildType + ".apk"
+        }
+    }
+
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation ("com.crashlytics.sdk.android:crashlytics:$crashlytics_version@aar") {
+        transitive = true
+    }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+
+    implementation "com.android.support:multidex:$multidex_version"
+
+    implementation "com.android.support.constraint:constraint-layout:$constraint_version"
+
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
+
+    implementation "android.arch.lifecycle:extensions:$viewmodel_version"
+    implementation "android.arch.lifecycle:viewmodel:$viewmodel_version"
+
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+}
+
+kapt {
+    generateStubs = true
+}

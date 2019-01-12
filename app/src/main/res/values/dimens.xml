@@ -1,0 +1,38 @@
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+    <dimen name="base_margin">16dp</dimen>
+    <dimen name="base_margin_double">32dp</dimen>
+    <dimen name="base_margin_half">8dp</dimen>
+
+    <dimen name="menu_item_vertical_margin">12dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/base_margin</dimen>
+    <dimen name="activity_vertical_margin">@dimen/base_margin</dimen>
+
+    <!-- font sizes-->
+    <dimen name="text_link">16sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_title_small">16sp</dimen>
+    <dimen name="text_tab">18sp</dimen>
+    <dimen name="text_description">14sp</dimen>
+    <dimen name="text_description_small">12sp</dimen>
+    <dimen name="text_description_xs">10sp</dimen>
+    <dimen name="text_label">14sp</dimen>
+    <dimen name="text_search">16sp</dimen>
+    <dimen name="text_nav">12sp</dimen>
+    <dimen name="toolbar_button_size">48dp</dimen>
+    <dimen name="toolbar_indicator_height">3dp</dimen>
+    <dimen name="nav_logo_size">56dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_item_icons_size">24dp</dimen>
+    <dimen name="nav_item_height">48dp</dimen>
+    <dimen name="nav_logo_stroke_width">2dp</dimen>
+</resources>

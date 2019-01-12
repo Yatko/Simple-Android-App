@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="colorAccent">@color/blue</color>
+    
+    <!-- navigation menu colors -->
+    <color name="nav_header_background">@color/blue</color>
+    <color name="nav_header_text_title">@color/white</color>
+    <color name="nav_header_text_subtitle">@color/white</color>
+    <color name="nav_item_icon">@color/darker</color>
+    <color name="nav_item_text">@color/blue</color>
+    <color name="nav_item_description">@color/light</color>
+    <color name="nav_copyright">@color/light</color>
+    <color name="nav_web">@color/light</color>
+    <color name="nav_header_stroke_color">@color/white</color>
+</resources>

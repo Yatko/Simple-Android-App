@@ -1,0 +1,61 @@
+<!--
+  ~ project: Simple App, Android
+  ~ app.h7.org/simple/Android
+  ~ Copyright © 2018 H7 (h7.org).
+  ~
+  ~ created by yatko.com
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TA" parent="TextAppearance.AppCompat"/>
+
+    <style name="TA.Menu" />
+
+    <style name="TA.Menu.Header"/>
+    <style name="TA.Menu.Header.Title">
+        <item name="android:textSize">@dimen/text_title_small</item>
+        <item name="android:textColor">?navigationHeaderTextTitleColor</item>
+    </style>
+    <style name="TA.Menu.Header.Subtitle">
+        <item name="android:textSize">@dimen/text_description_small</item>
+        <item name="android:textColor">?navigationHeaderTextSubtitleColor</item>
+    </style>
+
+    <style name="TA.Menu.Item"/>
+    <style name="TA.Menu.Item.Text">
+        <item name="android:textColor">?navigationItemText</item>
+        <item name="android:textSize">@dimen/text_link</item>
+    </style>
+    <style name="TA.Menu.Item.Description">
+        <item name="android:textColor">?navigationItemDescription</item>
+        <item name="android:textSize">@dimen/text_description_small</item>
+    </style>
+
+    <style name="TA.Menu.Copyright"/>
+    <style name="TA.Menu.Copyright.Text">
+        <item name="android:textSize">@dimen/text_description_small</item>
+        <item name="android:textColor">?navigationCopyright</item>
+    </style>
+    <style name="TA.Menu.Copyright.Web">
+        <item name="android:textSize">@dimen/text_description_small</item>
+        <item name="android:textColor">?navigationWeb</item>
+    </style>
+</resources>
